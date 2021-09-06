@@ -22,7 +22,7 @@ const isValid = (str) => {
       stack.push(current);
     }
   }
-  return stack.length === 0
+  return stack.length === 0;
 };
 
 const isClosedBracket = (char) => [')', '}', ']'].includes(char);

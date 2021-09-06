@@ -11,13 +11,13 @@ const longestCommonPrefix = (strs) => {
 
   for(let str of strs) {
     let substrLength = 1;
-    while(strs.every(item => item.substring(0, substrLength) === str.substring(0, substrLength))) {
+    while (strs.every(item => item.substring(0, substrLength) === str.substring(0, substrLength))) {
       depth--;
       substrLength ++;
       if (depth <= 0){
         break;
       }
     }
-    return str.substring(0, substrLength - 1)
+    return str.substring(0, substrLength - 1);
   }
 };
